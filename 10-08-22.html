@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 1</title>
+    <style>
+       .body
+        {
+            border: 10px solid white;
+        }
+    </style>
+</head>
+<body style="color: blue; border: 2px solid black">
+<div class="body">    
+    <h3 style="color: red;">1. Difference between div and span </h3>
+    <p>
+        Ans:
+        <br>
+        <b>Div:</b> 
+        It is a block-level element,which takes whole width of the browser
+        <div>Example: Div element</div>
+        <b>Span:</b>
+        It is an inline element,which only takes the width upto its content area.
+        <span>Example: span element</span>
+    </p>
+    <hr>
+    <h3 style="color: red;">2. Difference between class and IDs</h3>
+    <p>
+        Ans:
+        <br>
+        <b>Class:</b>
+        Class is an attribute which is used to select a specified tag. A tag can have multiple class values(Class names) and a single class name(Class value) can also be given to multiple tags. For targetting the selected tag we will use ".classvalue" which can also be said as ".classname"
+        <pre>
+            Example:
+           1. < i class="first second third fourth"> content < /i>
+           2. < p class="test"> content < /p>
+              < div class="test"> content < /div>
+              < span class="test"> content < /span>
+        </pre>
+        <b>ID</b>
+        ID is an attribute which is used to select a specified tag. ID cannot take multiple values and every ID must be unqiue, a same ID value(ID name) cannot be assigned to a different tag.  For targetting the selected tag we will use "#IDvalue" which can also be said as "#IDname"
+        <pre>
+            Example:
+            1. < i id="test1"> content < /i>
+               < div id="test2"> content < /div>
+        </pre>
+    </p>
+    <hr>
+    <h3 style="color: red;">3. What are self closing tags </h3>
+    <p>
+        Ans:
+        <br>
+        Self closing tags which are also called as Empty tags are the tags with only opening tags.
+        <pre>
+            Example:
+            1. < img>
+            2. < hr>
+            3. < br>
+        </pre>
+    </p>
+    <hr>
+    <h3 style="color: red;">4. How many types of headings are der? How to decide which to use where</h3>
+    <p>
+        Ans:
+        <br>
+        There are 6 types of headings. Every heading tag is by default in bold. They are: <br>
+        <ul>
+        <li> < h1>< /h1></li>
+        <li> < h2>< /h2></li>
+        <li> < h3>< /h3></li>
+        <li> < h4>< /h4></li>
+        <li> < h5>< /h5></li>
+        <li> < h6>< /h6></li>
+        </ul>
+        Depending upon the type of content and place we are using, we will be choosing different styles. The main difference in these headings are their font sizes.
+    </p>
+    <hr>
+    <h3 style="color: red;">5. Difference between block and inline</h3>
+    <p>
+       Ans:
+        <ol>
+        <li>Block elements are the elements who take the entire browser width; where as inline elements only take the width they required for their text content.</li>
+        <li>Another major difference in them is block level elements always starts in a new line, where as inline elements stays in the same line( if it not a added to block element).</li>
+        <li>Block level elements dont allow others to occupy their free space(width) as it completely assigned for them, where as inline elements allows other elements.</li>
+        </ol>
+        <pre>
+            Example for block level element:
+            <p>1. < p>< /p></p> <div>2. < div>< /div></div>
+            Example for inline elements:
+            <span>1. < span>< /span></span><i> 2. < i>< /i></i><u> 3. < u>< /u></u>
+        </pre>
+    </p>
+    <hr>
+    <h3 style="color: red;">6. Difference between em and strong</h3>
+    <p>
+        Ans:
+        <br>
+        Em and strong both are used to emphasize the text which is written inside them. Along with emphasizes "em" gives italic style to the font whereas "strong" gives bold style to the font.
+        <pre>
+            Example for "em":
+            < em> <em>Emphasized Italic Text</em>< /em>
+            Example for "strong":
+            < strong> <strong>Emphasized Strong Text</strong>< /strong>
+        </pre>
+    </p>
+    <hr>
+    <h3 style="color: red;">7. What are attributes?</h3>
+    <p>
+        Attributes are properties of a tag. Every attribute is unique. Some attributes take values,which some dont take any values.
+        Attributes which dont take any values are known as boolean attributes.
+        <pre>
+            Examples of attributes:
+            1. < span width="" style=""> Content area < /span>
+              In this width and style are attributes
+            2. < video controls autoplay> < /video>
+              In this controls and autoplay are boolean attributes
+        </pre>
+    </p>
+    <hr>
+    <h3 style="color: red;">8. Difference between HTML tags and elements</h3>
+    <p>
+        Ans:
+        <br>
+        HTML tags means only the opening tag and closing tag along with its attributes and their values.
+        <pre>For Example: < div class="test" style="color:blue; background-color: red;">< /div></pre>
+        Whereas HTML element means HTML tag along with the content between the tags.
+        <pre>For Example: < div class="test" style="color:blue; background-color: red;">This is content< /div></pre>
+    </p>
+    <hr>
+    <h3 style="color: red;">9. Explain br tags</h3>
+    <p>
+        Ans:
+        <br>
+        "br" tags are used for breaking up a line. It is a self-closing tag.
+        <pre>For example:
+            < div>Lorem ipsum dolor < br> sit amet consectetur adipisicin < br> g elit. Eum?< /div>
+            The output for the above written code will be:
+            <div>Lorem ipsum dolor <br> sit amet consectetur adipisicin <br> g elit. Eum?</div>
+        </pre> 
+    </p>
+    <hr>
+    <h3 style="color: red;">10. What are semantic tags?</h3>
+    <p>
+        Ans:
+        <br>
+        <ul>
+            <li>Semantic tags are block-level elements which are used to differentiate the area of display for which we are creating design.</li>
+            <li>Eventhough we change the tag name, it wont show any difference because they all act in a same way. But for the better understanding of the coders(who reads the code or who wants to make further changes) we use semantic tags</li>
+        </ul>
+        <pre>
+            Some of the semantic tags are:
+                1. < nav> Content < /nav>
+                2. < header> Content < /header>
+                3. < section> Content < /section>
+                4. < footer> Content < /footer> 
+        </pre>
+    </p>
+    <hr>
+</div>
+</body>
+</html>
