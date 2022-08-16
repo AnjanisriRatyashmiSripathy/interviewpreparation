@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day5</title>
+    <style>
+        body
+        {
+            color: blue
+        }
+        h3
+        {
+            color: red;
+        }
+        pre
+        {
+            width: 250px;
+            height: 50px;
+        }
+        .pseudo1
+        {   
+            width: 1500px;
+            transition: 5s;
+        }
+        .pseudo1:hover
+        {
+            background-color: greenyellow;
+            box-shadow: 2px 3px 4px red;
+            font-weight: bold;
+        }
+        .pseudo2
+        {
+            width: 1000px;
+            height: auto;
+        }
+        .pseudo2::after    
+        {
+            content: '';
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background-color: rgb(67, 178, 226);
+        }
+        .pseudo2::before   
+        {
+            content: '';
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background-color: rgb(244, 135, 10);
+        }
+    </style>
+</head>
+<body>
+    <h3>1. What are CSS combinators </h3>
+    <div>
+        Ans: <br>
+        They are of 4 types
+        <dl>Space combinators</dl>
+        <dd><pre style="background-color:yellow;">Syntax:selector1 selector2</pre></dd>
+        <dl>Child Sector</dl>
+        <dd><pre style="background-color:red;">Syntax:selector1>selector2</pre></dd>
+        <dl>adjacent sibling selector</dl>
+        <dd><pre style="background-color: pink;">Syntax:selector1+selector2</pre></dd>
+        <dl>all adjacent selectors</dl>
+        <dd><pre style="background-color: palegreen">Syntax:selector1~selector2</pre></dd>
+    </div>
+    <hr>
+    <h3>2. What are pseudo selectors in CSS</h3>
+    <div>
+        Ans: <br>
+        It mainly contains 2 divisions. They are:
+        <dl>1. Pseudo Classes</dl>
+        <dd>Syntax:selector: pseudo-classname</dd>
+        <pre class="pseudo1">
+         For example:
+         Lorem ipsum dolor sit, amet consectetur adipisicing.   
+        </pre>
+        <dl>1. Pseudo Element</dl>
+        <dd>Syntax:selector:: pseudo-element</dd>
+        <pre class="pseudo2">
+         <br> For example:
+         Lorem ipsum dolor sit, amet consectetur adipisicing. <br>
+        </pre>
+    </div>
+    <hr>
+</body>
+</html>
