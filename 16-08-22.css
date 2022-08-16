@@ -1,0 +1,176 @@
+h3
+{
+    color: red;
+}
+.ans1
+{
+    width: 200px;
+    height: 50px;
+    box-sizing: content-box;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding:2px 10px;
+    font-size: 18px;
+    color: white;
+    margin: 25px;
+    background-color: rgb(8, 188, 248);
+}
+.ans1:hover
+{
+    cursor: pointer;
+}
+.ans2
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+div .ans3
+{
+    width: 200px;
+    height: 200px;
+    background-color: palegreen;
+    transition: all 6s;
+}
+div>.ans3:hover
+{
+    width: 400px;
+    background-color: palevioletred;
+}
+.ans4
+{
+    width: 200px;
+    height: 200px;
+    background-color: yellowgreen;
+    border-radius: 50%;
+}
+.ans5
+{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+span
+{
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+    background-color: chocolate;
+}
+@media (min-width:200px) and (max-width:900px)
+{
+    .ans5
+    {
+        grid-template-columns: auto;
+    }
+}
+.ans6
+{
+    display: flex;
+    justify-content: space-evenly;
+    animation: ans6 10s infinite alternate;
+}
+@keyframes ans6
+{
+    0%
+    {
+        transform: rotateY(15deg);
+        background-color: aqua;
+    }
+    100%
+    {
+        transform: rotateX(125deg);
+        background-color: chartreuse;
+    }
+}
+.ans7
+{
+    text-align: center;
+   /* width: 500px;*/
+    height: 500px;
+    display: flex;
+  /*  position: relative;
+    left: 25%;*/
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(./bgprep.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.ans7 button
+{
+    position: relative;
+    right: -150px;
+}
+.ans8
+{
+    display: flex;
+    background-color: palegreen;
+    justify-content: space-between;
+    width: 98vw;
+}
+.rightcontent
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.right
+{
+    width: 100px;
+    padding: 5px;
+    margin: 30px;
+}
+.ans9
+{
+    display: flex;
+    flex-flow: row wrap;
+}
+@media (min-width:200px) and (max-width:1000px)
+{
+    .ans9
+    {
+        flex-flow: column wrap;
+    }
+    .ans10 .ans7
+    {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .ans10 .ans1
+    {
+        background-color: greenyellow;
+    }
+}
+.ans12 span, .ans13 span
+{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    transition: 10s all;
+}
+.ans12 span:hover
+{
+    background-color: green;
+    width: 250px;
+}
+.ans13 span
+{
+    background-color: green;
+    transition: 3s;
+}
+.ans13 span:hover
+{
+    transform: translateX(45px);
+}
+.ans14
+{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.ans14 span
+{
+    background-color: yellow;
+}
+    
